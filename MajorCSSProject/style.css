@@ -1,0 +1,362 @@
+*{
+     font-family: "Montserrat", sans-serif;
+     margin: 0;
+     color: #fff;
+     overflow: hidden;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    background-color: #000;
+}
+.sidebar{
+  background-color:black;
+  width: 345px;
+  border-radius: 1rem;
+  margin-right: 0.5rem;
+}
+
+.main-content{
+ background-color:#121212;
+ flex: 1;
+ border-radius: 1rem;
+ overflow: auto;
+ margin-top: 0.5rem;
+ padding: 0 1.5rem 0 1.5rem;
+
+}
+.music-player{
+  background-color:black;
+  position: fixed;
+  bottom:0px;
+  width: 100%;
+  height: 72px;
+}
+.navbar{
+  background-color: #121212;
+  justify-content: center;
+  border-radius: 1rem;
+   display: flex;
+    flex-direction: column;
+    height: 100px;
+    padding: 0.5rem 0.70rem;
+    
+}
+a{
+    text-decoration: none;
+}
+.nav-option{
+    background-color: #121212;
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem  0.75rem;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+.nav-option i{
+    font-size: 1.25rem;
+    background-color: transparent;
+}
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+     background-color: transparent;
+}
+.library{
+    background-color: #121212;
+     border-radius: 1rem;
+     height: 100%;
+     margin-top: 0.5rem;
+     padding:0.5rem  0.75rem ;
+     
+}
+.option{
+       display: flex;
+         justify-content: space-between;
+         align-items: center;
+}
+.lib-options img{
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-right: 10px;
+}
+.lib-options{
+    padding: 0.5rem;
+    gap: 10px;
+}
+.icons{
+    font-size: 1.25rem;
+    display: flex;
+    color: #fff;
+}
+.icons i{
+       margin-right: 1rem;
+      opacity: 0.7;
+}
+.icons i:hover{
+    opacity: 1;
+}
+.lib-boxes{
+    background-color:#121212;
+    border-radius: 1.25rem;
+    margin-top: 0.5rem;
+   
+}
+.first-box{
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 0.75rem;
+    margin-top: 0.75rem 0 1.75rem 0;
+    padding: 0.75rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box-p1{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+   
+}
+.box-p2{
+  font-size: 0.80rem;
+  opacity: 0.9;
+  margin-bottom: 12px;
+}
+.badge{
+    background-color: #fff;
+    border-radius: 0.80rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    padding: 0.25rem;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+}
+.second-box{
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 0.75rem;
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+}
+.sticky{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    background-color:#121212;
+    z-index: 10;
+}
+.sticky-nav{
+ margin-left: 0.75rem;
+}
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item{
+    color: #000;
+    margin-left: 1rem;
+    justify-content: space-evenly;
+}
+
+.user{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
+}
+.dark-badge{
+    background-color: #000;
+    color:white;
+}
+@media(max-width:1000px){
+  .hide{
+    display: none;
+  }
+}
+.top-card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+    height: 200px;
+}
+.top-card-title{
+    margin-top: 0.5rem;
+  font-weight: 600;
+}
+.top-card-subtitle{
+    margin-top: 0.5rem;
+    font-weight: 0.75rem;
+}
+
+.card-img{
+   
+    width: 110px;
+    height: 110px;
+    border-radius: 0.5rem;
+}
+.head{
+    margin-top: 2rem;
+    
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer{
+    height: 300px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    width: 90%;
+    height: 60%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+.music-player{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+   
+
+.album{
+      margin: 10px;
+    margin-top: 10px;
+    display: flex;
+    width: 25%;
+   
+}
+.music-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.40rem;
+}
+.album img{
+    height: 50px;
+    width: 50px;
+    border-radius: 4px;
+}
+.music-p{
+    margin: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.music-p1{
+    font-size: 0.75rem;
+}
+.icon{
+    margin: 5px;
+    margin-top: 10px;
+    margin-left: 0.50rem;
+}
+.player{
+    width: 50%;
+    
+}
+.controls {
+   margin-top: 1.5rem;
+    margin-left: auto;
+  row-gap: 20px;
+   width: 25%;
+   color: #ddd;
+   opacity: 0.8;
+    
+}
+.player-control-icon{
+  height: 1rem;        
+  width: 1rem;
+  margin: 0 0.5rem;
+  opacity: 0.7;
+}
+ .player-controls{
+    margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  opacity: 0.9;
+}
+.player-control-icon1{
+    opacity: 1;
+  height: 1.75rem;
+}
+ .player-controls:hover{
+    opacity: 1;
+ }
+.playback{
+    margin-top: 0.20rem;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  
+}
+.progressbar{
+    width: 60%;
+    appearance: none;
+    background-color: transparent;
+}
+
+.progressbar::-webkit-slider-runnable-track{
+    height: 0.33rem;
+    cursor: pointer;
+    background-color: #ddd;
+    border-radius:1.5px;
+    
+}
+.progressbar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+     height: 0.5rem;
+    width: 0.5rem;
+    cursor: pointer;
+     border-radius: 50%;
+    background-color:green;
+    margin-top: -2px;
+}
+.vol-range{
+    height: 1rem;
+    width: 50%;
+    appearance: none;
+    background-color: transparent;
+}
+.vol-range::-webkit-slider-runnable-track{
+    height: 0.2rem;
+    cursor: pointer;
+    background-color: #ddd;
+    border-radius:1.5px;
+    
+}
+.vol-range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+     height: 0.5rem;
+    width: 0.5rem;
+    cursor: pointer;
+     border-radius: 50%;
+    background-color:green;
+    margin-top: -2px;
+}
+
+
+
+
+
+
